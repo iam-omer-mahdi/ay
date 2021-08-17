@@ -2,7 +2,10 @@
   <section class="home px-3 sm:px-10">
     <div class="container mx-auto flex justify-between items-center gap-4">
       <div
+        style="background: rgb(25, 25, 25)"
         class="
+          relative
+          z-10
           text-center
           sm:text-left
           flex flex-col
@@ -147,6 +150,7 @@
       <div
         class="
           flex
+          z-0
           gap-5
           sm:gap-10
           absolute

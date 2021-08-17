@@ -9,7 +9,7 @@
       </button>
     </div>
     <div
-      :class="`fixed top-0 left-0 w-full h-full offcanvas ${
+      :class="`fixed top-0 left-0 w-full h-full offcanvas z-20 ${
         open ? 'open' : ''
       }`"
     >
