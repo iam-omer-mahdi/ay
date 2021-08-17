@@ -1,11 +1,21 @@
 <template>
-  <section class="home px-4 sm:px-10">
+  <section class="home px-3 sm:px-10">
     <div class="container mx-auto flex justify-between items-center gap-4">
-      <div class="text-left flex flex-col gap-2 md:gap-4 items-start">
+      <div
+        class="
+          text-center
+          sm:text-left
+          flex flex-col
+          gap-2
+          md:gap-4
+          items-center
+          sm:items-start
+        "
+      >
         <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold">
           Hi, I am Ayman.
         </h1>
-        <p class="text-xl sm:text-2xl max-w-2xl text-left tracking-wider">
+        <p class="text-xl sm:text-2xl sm:max-w-2xl tracking-wider">
           I am a Front-end Flutter Mobile Developer, I build custom apps that
           help businesses grow.
         </p>
@@ -41,7 +51,8 @@
           contact
           text-white
           text-center
-          p-10
+          p-5
+          sm:p-10
           flex flex-col
           justify-center
           items-center
@@ -133,7 +144,21 @@
         </div>
       </aside>
       <!-- Social Links -->
-      <div class="flex gap-10 absolute bottom-5 md:bottom-10">
+      <div
+        class="
+          flex
+          gap-5
+          sm:gap-10
+          absolute
+          bottom-5
+          md:bottom-10
+          right-1/2
+          transform
+          translate-x-1/2
+          sm:translate-x-0
+          sm:left-10
+        "
+      >
         <a
           href="https://www.facebook.com/profile.php?id=100010328613774"
           target="_blank"
