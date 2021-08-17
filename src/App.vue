@@ -1,32 +1,65 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div
+      v-if="loading"
+      class="
+        fixed
+        top-0
+        left-0
+        w-full
+        h-screen
+        grid
+        place-content-center
+        loader
+        z-10
+      "
+    >
+      <breeding-rhombus-spinner
+        :animation-duration="2000"
+        :size="65"
+        :color="'#fff'"
+      />
     </div>
-    <router-view/>
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
+<script>
+import Navbar from "./components/Navbar.vue";
+import { BreedingRhombusSpinner } from "epic-spinners";
+
+export default {
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  components: {
+    Navbar,
+    BreedingRhombusSpinner,
+  },
+  created() {
+    this.loading = true;
+  },
+  mounted() {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500);
+  },
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: "STIX Two Text", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fff;
+  background: rgb(25, 25, 25);
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.loader {
+  background: #161616;
 }
 </style>
