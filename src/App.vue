@@ -11,7 +11,7 @@
         grid
         place-content-center
         loader
-        z-10
+        z-50
       "
     >
       <breeding-rhombus-spinner

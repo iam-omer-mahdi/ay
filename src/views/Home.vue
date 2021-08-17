@@ -4,6 +4,7 @@
       <div
         style="background: rgb(25, 25, 25)"
         class="
+          text
           relative
           z-10
           text-center
@@ -149,6 +150,7 @@
       <!-- Social Links -->
       <div
         class="
+          social-links
           flex
           z-0
           gap-5
@@ -229,6 +231,8 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+
 export default {
   name: "Home",
   data() {
@@ -237,6 +241,64 @@ export default {
     };
   },
   components: {},
+  mounted() {
+    setTimeout(() => {
+      gsap.from(".text > *", {
+        delay: 1,
+        y: 50,
+        opacity: 0,
+        stagger: {
+          each: 0.1,
+          grid: "auto",
+          ease: "back",
+        },
+      });
+      gsap.from(".social-links > *", {
+        delay: 2,
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        stagger: {
+          each: 0.2,
+          from: "edges",
+          ease: "elastic",
+        },
+      });
+      gsap.from("nav .logo", {
+        delay: 1,
+        y: -30,
+        opacity: 0,
+        duration: 1,
+        ease: "back",
+      });
+      gsap.from("nav button", {
+        delay: 1.2,
+        y: -30,
+        opacity: 0,
+        duration: 1,
+        ease: "back",
+      });
+      gsap.from("img", {
+        delay: 2,
+        x: 30,
+        opacity: 0,
+        duration: 1,
+        ease: "back",
+      });
+      // gsap.from(".text p", {
+      //   delay: 1,
+      //   y: 50,
+      //   opacity: 0,
+      //   duration: 1,
+      // });
+      // gsap.from(".text button", {
+      //   delay: 2,
+      //   x: -50,
+      //   opacity: 0,
+      //   duration: 1,
+      // });
+    }, 1000);
+  },
 };
 </script>
 
