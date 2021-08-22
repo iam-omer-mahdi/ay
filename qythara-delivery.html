@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qythara</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/ico" href="favicon.ico">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Tailwind Css -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Icon Font -->
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;600&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- Loader  -->
+  <div class="fixed z-50 top-0 left-0 bottom-0 w-full h-full grid place-content-center text-center bg-black" id="loader">
+    <div class="breeding-rhombus-spinner">
+    <div class="rhombus child-1"></div>
+    <div class="rhombus child-2"></div>
+    <div class="rhombus child-3"></div>
+    <div class="rhombus child-4"></div>
+    <div class="rhombus child-5"></div>
+    <div class="rhombus child-6"></div>
+    <div class="rhombus child-7"></div>
+    <div class="rhombus child-8"></div>
+    <div class="rhombus big"></div>
+  </div>
+ </div>
+<!-- End Loader  -->
+  <header>
+    <nav class="mt-3 md:mt-8 w-full px-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" title="home" class="logo text-2xl">Ayman Alhindi</a>
+        <button class="navbar-toggler">
+          <i class="lnr lnr-text-align-right text-3xl"></i>
+        </button>
+      </div>
+      <div class="fixed top-0 left-0 w-full h-full offcanvas z-20 ">
+        <button class="absolute top-10 right-10 close">
+          <i class="lnr lnr-cross text-3xl"></i>
+        </button>
+
+        <div class="flex flex-col gap-5 justify-center items-center h-full">
+          <a href="qathara.html" title="qathara" class="link text-2xl sm:text-3xl md:text-4xl">Qathara App
+          </a>
+          <a href="qythara-delivery.html" title="qythara-delivery" class="link text-2xl sm:text-3xl md:text-4xl">
+            Qythara Delivery App</a>
+          <a href="sudakart.html" title="sudakart" class="link text-2xl sm:text-3xl md:text-4xl">SudaKart App
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main Content -->
+  <main>
+    <!-- Swiper -->
+    <h1 class="text-xl font-bold text-center mt-5">Qythara Delivery App</h1>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/1.jpg" alt="qythara 1" width="100%">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/2.jpg" alt="qythara 2" width="100%">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/3.jpg" alt="qythara 3" width="100%">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/4.jpg" alt="qythara 4" width="100%">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/5.jpg" alt="qythara 5" width="100%">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="mobile">
+            <img src="images/qythara/6.jpg" alt="qythara 6" width="100%">
+          </div>
+        </div>
+      </div>  
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      
+    </div>
+
+  </main>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
