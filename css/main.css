@@ -174,7 +174,7 @@ main {
   align-items: center;
 }
 
-.mobile {
+/* .mobile {
   position: relative;
   display: grid;
   place-content: center;
@@ -207,7 +207,7 @@ main {
 }
 .mobile img {
   border-radius: 4px;
-}
+} */
 /* #Loader */
 #loader {
   position: fixed;
