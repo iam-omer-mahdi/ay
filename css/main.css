@@ -181,7 +181,6 @@ main {
   width: 30vw;
   height: 100%;
   border: 8px solid rgb(9, 51, 85);
-  background: url("../images/iphone.png") top / cover no-repeat;
   border-radius: 0.25rem;
 }
 .mobile::after {
