@@ -1,3 +1,4 @@
+// Swiper ========================================
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
@@ -20,58 +21,43 @@ const swiper = new Swiper('.swiper-container', {
   },
 });
 
-// Loader
+// Loader ==========================================
 let loader = document.querySelector('#loader');
 
 window.onload = function () {
     setTimeout(function () {
-        loader.classList.add('hidden');
+        loader.classList.add('d-none');
     }, 1500)
 }
 
 
 
-// Navbar =====================================
+// Navbar =============================================
 let navBtn = document.querySelector('.navbar-toggler');
-let nav = document.querySelector('.offcanvas');
+let nav = document.querySelector('.fixedNav');
 let navClose = document.querySelector('.close');
 
 navBtn.addEventListener('click', () => {
   nav.classList.add('open');
+  nav.style.zIndex = '20';
 });
 
 navClose.addEventListener('click', () => {
   nav.classList.remove('open');
+  nav.style.zIndex = '-1';
 })
 
-let links = document.querySelectorAll(".link");
+let links = document.querySelectorAll(".nav-link");
 links.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove('open');
+    nav.style.zIndex = '-1';
   });
 });
 
-// End Navbar ===============================
+// End Navbar ==========================================
 
-// Contact ========================================
-let contactBtn = document.querySelector('#contactBtn');
-let contact = document.querySelector('aside');
-let overlay = document.querySelector('.overlay');
-overlay.classList.add('hidden');
-contactBtn.addEventListener('click', () => {
-  overlay.classList.remove('hidden');
-  contact.classList.add('show');
-})
-
-overlay.addEventListener('click', () => {
-  overlay.classList.add('hidden');
-  contact.classList.remove('show');
-})
-
-// End Contact =====================================
-
-
-
+// Animation
 gsap.from(".text > *", {
   delay: 1,
   y: 50,
@@ -82,6 +68,7 @@ gsap.from(".text > *", {
     ease: "back",
   },
 });
+
 gsap.from(".social-links > *", {
   delay: 2,
   y: 30,
@@ -93,6 +80,7 @@ gsap.from(".social-links > *", {
     ease: "elastic",
   },
 });
+
 gsap.from("nav .logo", {
   delay: 1,
   y: -30,
@@ -100,6 +88,7 @@ gsap.from("nav .logo", {
   duration: 1,
   ease: "back",
 });
+
 gsap.from("nav button", {
   delay: 1.2,
   y: -30,
@@ -107,6 +96,7 @@ gsap.from("nav button", {
   duration: 1,
   ease: "back",
 });
+
 gsap.from("img", {
   delay: 2,
   x: 30,
