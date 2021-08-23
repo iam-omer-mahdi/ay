@@ -174,15 +174,16 @@ main {
   align-items: center;
 }
 
-/* .mobile {
+.mobile {
   position: relative;
   display: grid;
   place-content: center;
   width: 30vw;
   height: 100%;
   border: 8px solid rgb(9, 51, 85);
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
+/*
 .mobile::after {
   position: absolute;
   content: "";
@@ -207,7 +208,8 @@ main {
 }
 .mobile img {
   border-radius: 4px;
-} */
+}
+*/
 /* #Loader */
 #loader {
   position: fixed;
