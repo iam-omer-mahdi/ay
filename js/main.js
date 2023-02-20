@@ -1,3 +1,12 @@
+// Loader ==========================================
+let loader = document.querySelector('#loader');
+
+window.onload = function () {
+    setTimeout(function () {
+        loader.classList.add('d-none');
+    }, 1500)
+}
+
 // Swiper ========================================
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -20,16 +29,6 @@ const swiper = new Swiper('.swiper-container', {
     el: '.swiper-scrollbar',
   },
 });
-
-// Loader ==========================================
-let loader = document.querySelector('#loader');
-
-window.onload = function () {
-    setTimeout(function () {
-        loader.classList.add('d-none');
-    }, 1500)
-}
-
 
 
 // Navbar =============================================
